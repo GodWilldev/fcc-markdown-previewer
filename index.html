@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.17/marked.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="script.js" defer></script>
+    <title>Markdown Previewer</title>
+</head>
+<body >
+    <header class="border shadow-lg p-3 mb-5  rounded ">
+        <h1 class="h1 text-center text-warning ">Markdown Previewer</h1>
+        <footer id="footer"><a class="link-light" href="https://codepen.io/godwilldev">by Godwilldev</a></footer>
+    </header>
+
+    <main class="container-fluid overflow-hidden  mt-5 border " >
+        <div class="row g-5 ">
+            <section  id="editor" class="col-12 col-md-6 col-xl-5 bg-secondary shadow-lg p-3 mb-5  rounded" >
+
+                <header class="d-flex justify-content-center bg-black shadow-lg p-1">
+                    <p class="text-light">Editor</p>
+                </header>
+                <textarea></textarea>
+            </section>
+
+            <section id="preview" class="col-12 col-md-6 col-xl-7 bg-secondary  shadow-lg p-3 mb-5 rounded ">
+
+                <header class="d-flex justify-content-between border border-2 border-info shadow-lg p-1 mb-2">
+                    <p class="text-light">Preview</p>
+                    <button type="button" id="view-code" class="btn btn-success">View HTML code</button>
+                </header>
+                <article class="p-3"></article>
+
+            </section>
+
+            <section id="code" class="col-12 col-md-6 col-xl-7 bg-secondary shadow-lg p-3 mb-5 rounded ">
+                <header class="d-flex justify-content-between border border-2 border-info shadow-lg p-1 mb-2">
+                    <p class="text-light">HTML code</p>
+                    <button type="button" id="unminify" class="btn btn-info">Unminify</button>
+                    <button type="button" id="view-preview" class="btn btn-success">Preview</button>
+                </header>
+                <p id="unminify-info" class="h5 text-info">
+                    In order to unminify the html code, copy paste it <a href="https://unminify.com/" target="_blank">here</a>
+                    <br/><button type="button" id="copy" class="btn btn-info">Copy Code</button>
+                </p>
+                <article class="p-3"></article>
+                
+                
+            </section>
+        </div>
+    </main>
+    <footer id="footer"><a class="link-light" href="https://codepen.io/godwilldev">by Godwilldev</a></footer>
+</body>
+</html>

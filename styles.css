@@ -1,0 +1,56 @@
+body {
+  background-color: rgba(15, 5, 49, 0.823);
+}
+
+textarea {
+  min-height: 95vh;
+  min-width: 100%;
+  resize: none;
+  background-color: rgba(15, 5, 49, 0.823);
+  color: white;
+}
+
+article {
+  background-color: ivory;
+}
+article code {
+  background-color: #180e38;
+  color: white;
+}
+article pre {
+  background-color: #301e4b;
+  padding: 2%;
+}
+article pre code {
+  background-color: #301e4b;
+}
+article blockquote {
+  border-left: 3px solid #ade528;
+  color: #1d4242;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+article table, article th, article td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+article table thead, article th thead, article td thead {
+  background-color: gray;
+}
+article img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  /* remove extra space below image */
+}
+
+#preview article {
+  height: 95vh;
+  width: 100%;
+  overflow-x: auto;
+}
+
+#footer {
+  text-align: center;
+  color: white;
+}/*# sourceMappingURL=styles.css.map */
